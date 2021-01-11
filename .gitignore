@@ -59,7 +59,6 @@ coverage.xml
 *.tex
 *.pdf
 *.csv
-*.txt
 *.pptx
 *.tmp
 *.jpg
