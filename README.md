@@ -56,44 +56,15 @@ https://www.synapse.org/#!Synapse:syn4301332
   ```
   DNA_classifier/
   │
+  ├── README.md
+  ├── .gitignore 
   ├── preprocess.ipynb - TCGA Data preprocessing
   ├── tsne_genedata.ipynb - t-SNE plotting
   ├── visualize_dataset.ipynb - Fake dataset 3D plot
-  ├── 
-  ├── parse_config.py - class to handle config file and cli options
   │
-  ├── new_project.py - initialize new project with template files
+  ├── feature-selector/ Use feature-selector(check README in this directory for detail)
   │
-  ├── feature-selector/ - Use feature-selector
-  │   ├── base_data_loader.py
-  │   ├── base_model.py
-  │   └── base_trainer.py
-  │
-  ├── data_loader/ - anything about data loading goes here
-  │   └── data_loaders.py
-  │
-  ├── data/ - default directory for storing input data
-  │
-  ├── model/ - models, losses, and metrics
-  │   ├── model.py
-  │   ├── metric.py
-  │   └── loss.py
-  │
-  ├── saved/
-  │   ├── models/ - trained models are saved here
-  │   └── log/ - default logdir for tensorboard and logging output
-  │
-  ├── trainer/ - trainers
-  │   └── trainer.py
-  │
-  ├── logger/ - module for tensorboard visualization and logging
-  │   ├── visualization.py
-  │   ├── logger.py
-  │   └── logger_config.json
-  │  
-  └── utils/ - small utility functions
-      ├── util.py
-      └── ...
-  ```
+  ├── pytorch-template/ - Use pytorch-template for training models(check README in this directory for detail)
+
 
 2021.01.06. Jeoung Chanyoung 작성
