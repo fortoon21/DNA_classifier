@@ -1,0 +1,54 @@
+{
+    "name": "gene_net_150",
+    "n_gpu": 1,
+
+    "arch": {
+        "type": "Model",
+        "args": {
+            "inputt": 150,
+            "hidden": 8,
+            "num_classes": 3
+        }
+    },
+    "data_loader": {
+        "type": "gene3DataLoader_150",
+        "args":{
+            "data_dir": "../",
+            "batch_size": 10,
+            "shuffle": true,
+            "validation_split": 0.3,
+            "num_workers": 2
+        }
+    },
+    "optimizer": {
+        "type": "Adam",
+        "args":{
+            "lr": 0.01,
+            "weight_decay": 0,
+            "amsgrad": true
+        }
+    },
+    "loss": "nll_loss",
+    "metrics": [
+        "accuracy"
+    ],
+    "lr_scheduler": {
+        "type": "StepLR",
+        "args": {
+            "step_size": 5,
+            "gamma": 0.1
+        }
+    },
+    "trainer": {
+        "epochs": 100,
+
+        "save_dir": "saved/",
+        "save_period": 1,
+        "verbosity": 2,
+        
+        "monitor": "min val_loss",
+        "early_stop": 10,
+
+        "tensorboard": true
+    }
+}
