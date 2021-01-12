@@ -58,13 +58,14 @@ https://www.synapse.org/#!Synapse:syn4301332
   │
   ├── README.md
   ├── .gitignore 
+  ├── requirements.txt
   ├── preprocess.ipynb - TCGA Data preprocessing
   ├── tsne_genedata.ipynb - t-SNE plotting
   ├── visualize_dataset.ipynb - Fake dataset 3D plot
   │
   ├── feature-selector/ Use feature-selector(check README in this directory for detail)
   │
-  ├── pytorch-template/ - Use pytorch-template for training models(check README in this directory for detail)
+  └── pytorch-template/ - Use pytorch-template for training models(check README in this directory for detail)
 
 
 2021.01.06. Jeoung Chanyoung 작성
